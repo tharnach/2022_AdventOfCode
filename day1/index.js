@@ -12,3 +12,9 @@ const groupTotals = stringArray
     .sort()
 
 console.log(chalk.greenBright.bold(groupTotals[groupTotals.length - 1]))
+
+const topThree = groupTotals
+    .slice(-3)
+    .reduce((acc, curr) => Number(curr) + acc, 0)
+
+console.log(topThree)
