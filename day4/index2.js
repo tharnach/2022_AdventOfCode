@@ -18,9 +18,6 @@ const noOverlap = stringArray.reduce((acc, curr) => {
     if ((s1Start > s2End) || (s2Start > s1End)) {
         return acc += 1
     }
-    // if ((s1Start <= s2Start && s1End >= s2End) || (s2Start <= s1Start && s2End >= s1End)) {
-    //     return acc += 1
-    // }
     return acc
 }, 0)
 
